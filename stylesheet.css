@@ -1,0 +1,87 @@
+body {
+    /* background-color: transparent; */
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.grid-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 300px 50px 50px;
+    grid-template-areas:    "man    a    b" 
+                            "man    c    d"
+                            "man    e    f"
+                            "man    g    h"
+                            "man    i    j"
+                            "man    k    l"
+                            "man    m    n"
+                            "man    o    p"
+                            "man    q    r"
+                            "man    s    t"
+                            "man    u    v"
+                            "man    w    x"
+                            "man    y    z"
+                            "topic  blank    blank"
+                            "answer turns    turns";
+    padding: 10px;
+}
+.topic {
+    height: 50px;
+    font-size: 15px!important;
+    grid-area: topic;
+}
+.usedWrong {
+    color: red;
+}
+.usedRight {
+    color: green;
+}
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+#answer {
+    height: 150px;
+    font-size: 25px;
+    line-height: 0px;
+    grid-area: answer;
+}
+.hangman {
+    background-image: url("./base.png");
+    height: 390px;
+    grid-area: man;
+}
+.letters {
+    height: 30px;
+}
+#turns {
+    font-size: 20px;
+    grid-area: turns;
+}
+#letterA {grid-area: a;}
+#letterB {grid-area: b;}
+#letterC {grid-area: c;}
+#letterD {grid-area: d;}
+#letterE {grid-area: e;}
+#letterF {grid-area: f;}
+#letterG {grid-area: g;}
+#letterH {grid-area: h;}
+#letterI {grid-area: i;}
+#letterJ {grid-area: j;}
+#letterK {grid-area: k;}
+#letterL {grid-area: l;}
+#letterM {grid-area: m;}
+#letterN {grid-area: n;}
+#letterO {grid-area: o;}
+#letterP {grid-area: p;}
+#letterQ {grid-area: q;}
+#letterR {grid-area: r;}
+#letterS {grid-area: s;}
+#letterT {grid-area: t;}
+#letterU {grid-area: u;}
+#letterV {grid-area: v;}
+#letterW {grid-area: w;}
+#letterX {grid-area: x;}
+#letterY {grid-area: y;}
+#letterZ {grid-area: z;}
